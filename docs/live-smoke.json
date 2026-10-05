@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-10-03T14:39:49.948623+00:00",
+  "note": "Actual provider/HTTP checks at this time. These values are not used by the UI.",
+  "checks": [
+    {
+      "endpoint": "/health",
+      "status": 200,
+      "network": "mainnet-beta"
+    },
+    {
+      "endpoint": "/api/live/status",
+      "status": 200,
+      "kind": "REAL",
+      "network": "mainnet-beta"
+    },
+    {
+      "endpoint": "/api/markets/sol",
+      "status": 200,
+      "price_usd": 119.36,
+      "provider": "CoinGecko",
+      "retrieved_at": "2026-10-03T14:39:33.783082+00:00"
+    },
+    {
+      "endpoint": "/api/markets/So11111111111111111111111111111111111111112/history?days=7",
+      "status": 200,
+      "observations": 169,
+      "provider": "CoinGecko"
+    },
+    {
+      "endpoint": "/api/wallets/So11111111111111111111111111111111111111112",
+      "status": 429,
+      "detail": "Solana mainnet RPC rate limit reached or temporarily unavailable. Retry shortly."
+    },
+    {
+      "endpoint": "/api/markets/search?q=JUP",
+      "status": 200,
+      "results": 3
+    }
+  ]
+}

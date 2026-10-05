@@ -1,0 +1,198 @@
+{
+  "holdout": {
+    "buy_and_hold": {
+      "activity": {
+        "cost_breakdown_usd": {
+          "dex_cost_usd": 25.27659777183493,
+          "liquidity_impact_cost_usd": 0.0,
+          "network_cost_usd": 0.08,
+          "slippage_cost_usd": 16.85293075521304
+        },
+        "failed_execution_count": 0,
+        "round_trip_turnover_x": 0.8425532590611643,
+        "signal_count": 4,
+        "time_weighted_exposure_pct": 42.14680362978725,
+        "trade_count": 4
+      },
+      "metrics": {
+        "average_trade_return_pct": 10.604599222789815,
+        "costs_usd": 42.209528527047866,
+        "ending_equity_usd": 10424.183968911591,
+        "gross_return_pct": 4.663934974386419,
+        "max_drawdown_pct": 5.691921408102818,
+        "median_trade_return_pct": 4.657533223868148,
+        "net_return_pct": 4.241839689115912,
+        "profit_factor": 2.302643122366992,
+        "profit_factor_reason": null,
+        "sharpe": 9.043565399072941,
+        "sharpe_observations": 3,
+        "sharpe_reason": null,
+        "total_return_pct": 4.663934974386419,
+        "trade_count": 4,
+        "win_rate_pct": 50.0
+      }
+    },
+    "momentum": {
+      "activity": {
+        "cost_breakdown_usd": {
+          "dex_cost_usd": 621.3328220276712,
+          "liquidity_impact_cost_usd": 0.0,
+          "network_cost_usd": 2.08,
+          "slippage_cost_usd": 414.22247883391117
+        },
+        "failed_execution_count": 2,
+        "round_trip_turnover_x": 20.711094067589038,
+        "signal_count": 106,
+        "time_weighted_exposure_pct": 11.524507406431272,
+        "trade_count": 104
+      },
+      "metrics": {
+        "average_trade_return_pct": -0.8541007387220076,
+        "costs_usd": 1037.6353008615688,
+        "ending_equity_usd": 9111.73523172911,
+        "gross_return_pct": 1.4937053259068023,
+        "max_drawdown_pct": 8.912145993351483,
+        "median_trade_return_pct": -1.1158361435557196,
+        "net_return_pct": -8.8826476827089,
+        "profit_factor": 0.4612430506339578,
+        "profit_factor_reason": null,
+        "sharpe": -53.5483093990017,
+        "sharpe_observations": 3,
+        "sharpe_reason": null,
+        "total_return_pct": 1.4937053259068023,
+        "trade_count": 104,
+        "win_rate_pct": 34.61538461538461
+      }
+    },
+    "strategy": {
+      "activity": {
+        "cost_breakdown_usd": {
+          "dex_cost_usd": 191.42549775894562,
+          "liquidity_impact_cost_usd": 0.0,
+          "network_cost_usd": 0.64,
+          "slippage_cost_usd": 127.6175112282549
+        },
+        "failed_execution_count": 0,
+        "round_trip_turnover_x": 6.380849925298188,
+        "signal_count": 32,
+        "time_weighted_exposure_pct": 6.596808390033564,
+        "trade_count": 32
+      },
+      "metrics": {
+        "average_trade_return_pct": -0.5984451131337295,
+        "costs_usd": 319.68300898719616,
+        "ending_equity_usd": 9808.497563797207,
+        "gross_return_pct": 1.281805727844021,
+        "max_drawdown_pct": 2.5001268253467157,
+        "median_trade_return_pct": -0.5848303454632401,
+        "net_return_pct": -1.9150243620279284,
+        "profit_factor": 0.6620880979423801,
+        "profit_factor_reason": null,
+        "sharpe": -6.195321045444175,
+        "sharpe_observations": 3,
+        "sharpe_reason": null,
+        "total_return_pct": 1.281805727844021,
+        "trade_count": 32,
+        "win_rate_pct": 46.875
+      }
+    }
+  },
+  "training": {
+    "buy_and_hold": {
+      "activity": {
+        "cost_breakdown_usd": {
+          "dex_cost_usd": 22.60007088371443,
+          "liquidity_impact_cost_usd": 0.0,
+          "network_cost_usd": 0.08,
+          "slippage_cost_usd": 15.065003642240097
+        },
+        "failed_execution_count": 0,
+        "round_trip_turnover_x": 0.7533356961238143,
+        "signal_count": 4,
+        "time_weighted_exposure_pct": 39.1591674529809,
+        "trade_count": 4
+      },
+      "metrics": {
+        "average_trade_return_pct": -11.632878339344666,
+        "costs_usd": 37.74507452595387,
+        "ending_equity_usd": 9534.684866426214,
+        "gross_return_pct": -4.275700590478337,
+        "max_drawdown_pct": 13.25772854499806,
+        "median_trade_return_pct": -10.631901266526938,
+        "net_return_pct": -4.65315133573786,
+        "profit_factor": 0.2432346189774299,
+        "profit_factor_reason": null,
+        "sharpe": -7.218024556794887,
+        "sharpe_observations": 8,
+        "sharpe_reason": null,
+        "total_return_pct": -4.275700590478337,
+        "trade_count": 4,
+        "win_rate_pct": 50.0
+      }
+    },
+    "momentum": {
+      "activity": {
+        "cost_breakdown_usd": {
+          "dex_cost_usd": 1313.7304353972079,
+          "liquidity_impact_cost_usd": 0.0,
+          "network_cost_usd": 4.4,
+          "slippage_cost_usd": 875.8207158829343
+        },
+        "failed_execution_count": 3,
+        "round_trip_turnover_x": 43.79101451324026,
+        "signal_count": 221,
+        "time_weighted_exposure_pct": 11.12123384928149,
+        "trade_count": 220
+      },
+      "metrics": {
+        "average_trade_return_pct": -0.9488848268392778,
+        "costs_usd": 2193.951151280112,
+        "ending_equity_usd": 7912.4533809536015,
+        "gross_return_pct": 1.064045322337015,
+        "max_drawdown_pct": 21.301276884808416,
+        "median_trade_return_pct": -1.008395950949648,
+        "net_return_pct": -20.87546619046399,
+        "profit_factor": 0.3803319760538881,
+        "profit_factor_reason": null,
+        "sharpe": -80.00734030077025,
+        "sharpe_observations": 8,
+        "sharpe_reason": null,
+        "total_return_pct": 1.064045322337015,
+        "trade_count": 220,
+        "win_rate_pct": 36.36363636363637
+      }
+    },
+    "strategy": {
+      "activity": {
+        "cost_breakdown_usd": {
+          "dex_cost_usd": 494.15809980989496,
+          "liquidity_impact_cost_usd": 0.0,
+          "network_cost_usd": 1.6600000000000001,
+          "slippage_cost_usd": 329.4369210827081
+        },
+        "failed_execution_count": 2,
+        "round_trip_turnover_x": 16.47193666032983,
+        "signal_count": 83,
+        "time_weighted_exposure_pct": 7.787664928482185,
+        "trade_count": 83
+      },
+      "metrics": {
+        "average_trade_return_pct": -1.5401036060506699,
+        "costs_usd": 825.2550208925918,
+        "ending_equity_usd": 8721.714006977943,
+        "gross_return_pct": -4.530309721294634,
+        "max_drawdown_pct": 12.78285993022057,
+        "median_trade_return_pct": -1.3490392584501025,
+        "net_return_pct": -12.78285993022057,
+        "profit_factor": 0.2481036658992238,
+        "profit_factor_reason": null,
+        "sharpe": -47.97688337349583,
+        "sharpe_observations": 8,
+        "sharpe_reason": null,
+        "total_return_pct": -4.530309721294634,
+        "trade_count": 83,
+        "win_rate_pct": 33.734939759036145
+      }
+    }
+  }
+}

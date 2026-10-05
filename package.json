@@ -1,0 +1,21 @@
+{
+  "name": "solana-quant-research-lab-monorepo",
+  "private": true,
+  "version": "1.2.0",
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "typecheck": "npm --prefix frontend run typecheck && frontend/node_modules/.bin/tsc -p edge/tsconfig.json",
+    "test:edge": "node --test edge/tests.mjs",
+    "test:wallet": "node scripts/test-wallet.mjs",
+    "test:audit-ui": "node scripts/test-audit-ui.mjs",
+    "test:wasm": "node scripts/check-wasm.mjs",
+    "dev": "npm --prefix frontend run dev --"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.11",
+    "esbuild": "^0.28.2"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.3"
+  }
+}

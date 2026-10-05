@@ -1,0 +1,5 @@
+{
+  "error": "Performance blocked: 101 observations have missing or invalid prices; 490 observations have missing or invalid historical liquidity; Missing historical prices or liquidity for GAwhcphCqCv5bKHmCiN4VDdNWfbXJL4npmkc8L3Q9S9H",
+  "experiment_id": "exp_d315633fdf4ece70badc4f63",
+  "state": "failed"
+}

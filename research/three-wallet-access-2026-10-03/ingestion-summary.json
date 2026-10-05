@@ -1,0 +1,138 @@
+{
+  "kind": "REAL",
+  "purpose": "Provider access and conservative swap parsing, not strategy performance",
+  "checked_at": "2026-10-03T20:15:10.041934+00:00",
+  "start_ts": 1790881200,
+  "end_ts": 1791054000,
+  "wallets": [
+    {
+      "wallet": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+      "source_url": "https://gmgn.ai/sol/address/8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+      "address_format_valid": true,
+      "observed_provider_history": true,
+      "records": 1519,
+      "unique_records": 1519,
+      "pages": 17,
+      "coverage_complete": true,
+      "supported_swaps": 60,
+      "buys": 22,
+      "sells": 38,
+      "tokens": 22,
+      "exclusions": {
+        "not_supported_swap": 1030,
+        "ambiguous_wallet_legs": 45,
+        "missing_swap_event": 384
+      },
+      "retrieved_at": "2026-10-03T19:38:42.762170+00:00",
+      "history_sha256": "52e6912d42515df8440c6f385e919d2f31ddb231957b863e5c793d32cb68c002",
+      "history_reused_from_first_check": true
+    },
+    {
+      "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+      "source_url": "https://gmgn.ai/sol/address/BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+      "address_format_valid": true,
+      "observed_provider_history": true,
+      "records": 2500,
+      "unique_records": 2491,
+      "pages": 25,
+      "coverage_complete": false,
+      "supported_swaps": 0,
+      "buys": 0,
+      "sells": 0,
+      "tokens": 0,
+      "exclusions": {
+        "not_supported_swap": 2484,
+        "missing_swap_event": 5,
+        "duplicate_or_missing_signature": 9,
+        "ambiguous_wallet_legs": 2
+      },
+      "retrieved_at": "2026-10-03T20:14:54.119063+00:00",
+      "history_sha256": "ecf03f3f6f9d622c61c35ec2005a38de9e0df024a87933b6c2005cb1abb32439",
+      "history_reused_from_first_check": false
+    },
+    {
+      "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+      "source_url": "https://gmgn.ai/sol/address/215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+      "address_format_valid": true,
+      "observed_provider_history": true,
+      "records": 763,
+      "unique_records": 763,
+      "pages": 9,
+      "coverage_complete": true,
+      "supported_swaps": 14,
+      "buys": 7,
+      "sells": 7,
+      "tokens": 12,
+      "exclusions": {
+        "not_supported_swap": 627,
+        "missing_swap_event": 102,
+        "ambiguous_wallet_legs": 18,
+        "unsupported_quote_pair": 2
+      },
+      "retrieved_at": "2026-10-03T20:15:09.573869+00:00",
+      "history_sha256": "163d5ffb743f8d1bd99159d149db3f32ea755df0898f7f80535cd3bd7bcaeb06",
+      "history_reused_from_first_check": false
+    }
+  ],
+  "normalization": {
+    "wallet_ingestion": [
+      {
+        "wallet": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+        "coverage_complete": true,
+        "requested_start": 1790881200,
+        "requested_end": 1791054000,
+        "retrieved_at": "2026-10-03T19:38:42.762170+00:00",
+        "provider": "Helius Enhanced Transactions"
+      },
+      {
+        "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+        "coverage_complete": false,
+        "requested_start": 1790881200,
+        "requested_end": 1791054000,
+        "retrieved_at": "2026-10-03T20:14:54.119063+00:00",
+        "provider": "Helius Enhanced Transactions"
+      },
+      {
+        "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+        "coverage_complete": true,
+        "requested_start": 1790881200,
+        "requested_end": 1791054000,
+        "retrieved_at": "2026-10-03T20:15:09.573869+00:00",
+        "provider": "Helius Enhanced Transactions"
+      }
+    ],
+    "rejected": {
+      "not_supported_swap": 4141,
+      "ambiguous_wallet_legs": 65,
+      "missing_swap_event": 491,
+      "duplicate_or_missing_signature": 9,
+      "unsupported_quote_pair": 2
+    },
+    "observed_transactions": 4773,
+    "transaction_coverage_complete": false
+  },
+  "supported_swaps": 74,
+  "token_count": 34,
+  "supported_tokens_seen_by_all_three_wallets": 0,
+  "requests": {
+    "site_history_calls": 34,
+    "site_history_calls_cap": 50,
+    "maximum_upstream_attempts_including_readiness_and_edge_retries": 74
+  },
+  "failures": [],
+  "performance_evaluated": false,
+  "remaining_blockers": [
+    "The second wallet reached its 25-page cap; its 48-hour history is incomplete.",
+    "No supported token appears for all three wallets in this parsed sample. The default three-wallet signal cannot be established from these observations.",
+    "Authorized historical exit-liquidity access remains required.",
+    "Complete required prices/liquidity and token eligibility must be verified for a pre-specified universe before performance.",
+    "Manual explorer review remains pending."
+  ],
+  "coverage_limitation": "Empty terminal pages only confirm this provider query was exhausted; they do not establish full on-chain or decoder coverage.",
+  "redistribution": "Unconfirmed. Raw provider records and normalized observations stay outside the source and shared archive.",
+  "inference_limitations": [
+    "Missing swap events, unknown transaction types and ambiguous legs are exclusions, not fabricated trades.",
+    "Zero retained swaps for the incomplete second history does not establish that this address never traded.",
+    "No shared supported token in this sample does not establish absence of shared activity in unparsed or unobserved records."
+  ]
+}

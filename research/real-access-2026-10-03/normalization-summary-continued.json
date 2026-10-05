@@ -1,0 +1,28 @@
+{
+  "records": 1519,
+  "range_utc": [
+    "2026-10-01T19:03:17+00:00",
+    "2026-10-03T18:52:55+00:00"
+  ],
+  "normalization": {
+    "wallet_ingestion": [
+      {
+        "wallet": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+        "coverage_complete": true,
+        "requested_start": 1790881200,
+        "requested_end": 1791054000,
+        "retrieved_at": "2026-10-03T19:38:42.762170+00:00",
+        "provider": "Helius Enhanced Transactions"
+      }
+    ],
+    "rejected": {
+      "not_supported_swap": 1030,
+      "ambiguous_wallet_legs": 45,
+      "missing_swap_event": 384
+    },
+    "observed_transactions": 1519,
+    "transaction_coverage_complete": true
+  },
+  "supported_swaps": 60,
+  "tokens": 22
+}

@@ -1,0 +1,161 @@
+{
+  "attempt_nonce": "ad3aeca5f42c477da4d5092e19ba33e9",
+  "benchmarks": {
+    "buy_and_hold": {
+      "allocation": "Each token receives min(strategy position budget, 90% of starting capital / selected token count). Unallocated, ineligible or failed allocations remain cash; no redistribution.",
+      "name": "Fixed allocation buy-and-hold",
+      "rule": "Decide at the first evaluation bar using available liquidity; buy on the first later bar after the shared delay; hold until segment end. No stops, targets or rebalancing."
+    },
+    "momentum": {
+      "allocation": "Same fixed allocation per token as buy-and-hold; no leverage or redistribution.",
+      "name": "Simple momentum",
+      "rule": "At segment start and every 60 minutes, buy if the available price is at least 1% above the available price 60 minutes earlier. Hold 60 minutes; no stops or targets. No entry while invested or pending."
+    }
+  },
+  "configuration": {
+    "accumulation_minutes": 30,
+    "entry_delay_minutes": 5,
+    "fee_bps": 30.0,
+    "fixed_fee_usd": 0.01,
+    "holding_minutes": 120,
+    "hypothesis": "When multiple previously profitable wallets accumulate a token, subsequent returns may exceed execution costs.",
+    "initial_capital_usd": 10000.0,
+    "liquidity_impact_bps_per_pct": 0.0,
+    "max_liquidity_participation_pct": 1.0,
+    "min_closed_trades": 2,
+    "min_liquidity_usd": 100000.0,
+    "min_momentum_pct": -100.0,
+    "min_token_age_hours": 0.0,
+    "min_trade_size_usd": 0.0,
+    "min_volume_usd": 0.0,
+    "min_wallet_count": 3,
+    "min_wallet_return_pct": 0.0,
+    "momentum_minutes": 60,
+    "name": "Smart Money Accumulation",
+    "position_size_usd": 1000.0,
+    "slippage_bps": 20.0,
+    "stop_loss_pct": 5.0,
+    "strategy_type": "smart_money_accumulation",
+    "take_profit_pct": 8.0,
+    "train_fraction": 0.7,
+    "wallet_ids": [],
+    "warmup_hours": 24
+  },
+  "created_at": "2026-10-03T19:45:40.846884+00:00",
+  "dataset_content_hash": "7f5ed1b4408049bd35885fc22a0fa2e471c978ca9ba6cfa7dfdf34edc8931e94",
+  "dataset_id": "real_user_wallet_20261003_firstbuy",
+  "dataset_kind": "REAL",
+  "engine_version": "1.2.0",
+  "execution_assumptions": {
+    "entry_delay_minutes": 5,
+    "fee_bps": 30.0,
+    "fixed_fee_usd": 0.01,
+    "initial_capital_usd": 10000.0,
+    "liquidity_impact_bps_per_pct": 0.0,
+    "max_liquidity_participation_pct": 1.0,
+    "min_liquidity_usd": 100000.0,
+    "position_size_usd": 1000.0,
+    "slippage_bps": 20.0
+  },
+  "experiment_id": "exp_d315633fdf4ece70badc4f63",
+  "holdout_warning": "Historical holdout may already be known from raw data. This lock protects the stored snapshot, not secrecy or absence of human look-ahead.",
+  "hypothesis": "When multiple previously profitable wallets accumulate a token, subsequent returns may exceed execution costs.",
+  "observation_availability": "5m REAL prices available source_price_ts + 300s; exact historical liquidity snapshots; no gap filling. SYNTHETIC observations are simulated.",
+  "provider_provenance": {
+    "full_history_normalization": {
+      "observed_transactions": 1519,
+      "rejected": {
+        "ambiguous_wallet_legs": 45,
+        "missing_swap_event": 384,
+        "not_supported_swap": 1030
+      },
+      "transaction_coverage_complete": true,
+      "wallet_ingestion": [
+        {
+          "coverage_complete": true,
+          "provider": "Helius Enhanced Transactions",
+          "requested_end": 1791054000,
+          "requested_start": 1790881200,
+          "retrieved_at": "2026-10-03T19:38:42.762170+00:00",
+          "wallet": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6"
+        }
+      ]
+    },
+    "full_history_sha256": "2d76ff58d415a3ec7740b67d7c9eb738c9be555c26437ea02a9fbcd9e1a8ef66",
+    "liquidity_field": "exit_liquidity_usd",
+    "market_requests": {
+      "includes_retries": true,
+      "limit": 12,
+      "used": 6
+    },
+    "missing_data": [
+      "Missing historical prices or liquidity for GAwhcphCqCv5bKHmCiN4VDdNWfbXJL4npmkc8L3Q9S9H"
+    ],
+    "observed_transactions": 6,
+    "price_availability_lag_seconds": 300,
+    "provider": "Helius + Birdeye",
+    "redistribution": "Not confirmed; dataset remains outside source and shareable bundles.",
+    "rejected": {},
+    "requested_end": 1791054000,
+    "requested_start": 1790881200,
+    "retrieved_at": "2026-10-03T19:42:31.310629+00:00",
+    "token_selection": {
+      "all_supported_tokens": 22,
+      "decision_information_timestamp": 1790917987,
+      "remaining_bias": "Wallet itself was selected from a hindsight GMGN PnL ranking. Historical data is not guaranteed unseen.",
+      "rule": "First chronologically observed supported buy, ordered by timestamp, slot and event ID; chosen before fetching this token price series. No returns were used to choose it.",
+      "rule_recorded_at": "2026-10-03T19:42:13.051947+00:00",
+      "selected_tokens": 1,
+      "token": "GAwhcphCqCv5bKHmCiN4VDdNWfbXJL4npmkc8L3Q9S9H"
+    },
+    "transaction_coverage_complete": true,
+    "wallet_ingestion": [
+      {
+        "coverage_complete": true,
+        "provider": "Helius Enhanced Transactions",
+        "requested_end": 1791054000,
+        "requested_start": 1790881200,
+        "retrieved_at": "2026-10-03T19:38:42.762170+00:00",
+        "wallet": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6"
+      }
+    ],
+    "wallet_selection": {
+      "bias": "Wallet selected using a ranking overlapping this historical period. This is retrospective selection bias, not evidence of an unseen or unbiased test.",
+      "end_ts": 1791054000,
+      "history_page_limit": 10,
+      "max_upstream_attempts_history": 20,
+      "purpose": "Verify real ingestion and data quality. Missing historical exit liquidity blocks modeled performance.",
+      "redistribution": "Not confirmed; raw provider records are kept outside the source repository.",
+      "selection_recorded_at": "2026-10-03T19:35:25.054853+00:00",
+      "selection_rule": "User supplied the first visible public wallet in a GMGN list sorted by 1D PnL; no wallet returns independently verified.",
+      "source_url": "https://gmgn.ai/sol/address/8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+      "start_ts": 1790881200,
+      "wallets": [
+        "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6"
+      ],
+      "window_rule": "Fixed 48 hours ending at the last completed UTC hour before selection; do not change after inspecting outcomes."
+    }
+  },
+  "schema_version": 1,
+  "seed": null,
+  "sensitivity_design": {
+    "delays_minutes": "max(0, base - 5), min(1440, base + 5)",
+    "design": "Seven pre-specified one-at-a-time rows; base plus low/high fees, delay and unique-wallet threshold. Training only; no best-row selection.",
+    "fees": "base / 2, min(1000, base * 2 + 10)",
+    "unique_buyers": "max(1, base - 1), min(100, base + 1)"
+  },
+  "source_revision": "source-sha256:697441c3e80d5740405e38f36f16b7b6288b30a269b236d8fe2dfbf9a09d02c5",
+  "split": {
+    "holdout_end": 1791054000,
+    "holdout_start": 1791028200,
+    "training_end": 1791027900,
+    "training_start": 1790967600,
+    "warmup_start": 1790881200
+  },
+  "token_universe": [
+    "GAwhcphCqCv5bKHmCiN4VDdNWfbXJL4npmkc8L3Q9S9H"
+  ],
+  "wallet_universe": [
+    "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6"
+  ]
+}

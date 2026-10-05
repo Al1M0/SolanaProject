@@ -1,0 +1,9 @@
+{
+  "token": "GAwhcphCqCv5bKHmCiN4VDdNWfbXJL4npmkc8L3Q9S9H",
+  "rule": "First chronologically observed supported buy, ordered by timestamp, slot and event ID; chosen before fetching this token price series. No returns were used to choose it.",
+  "decision_information_timestamp": 1790917987,
+  "rule_recorded_at": "2026-10-03T19:42:13.051947+00:00",
+  "selected_tokens": 1,
+  "all_supported_tokens": 22,
+  "remaining_bias": "Wallet itself was selected from a hindsight GMGN PnL ranking. Historical data is not guaranteed unseen."
+}

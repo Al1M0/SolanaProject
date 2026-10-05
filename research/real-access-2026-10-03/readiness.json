@@ -1,0 +1,23 @@
+{
+  "ready": false,
+  "checks": [
+    {
+      "endpoint": "Helius decoded wallet history",
+      "status": "accessible",
+      "message": "Endpoint responded; study coverage still requires verification"
+    },
+    {
+      "endpoint": "Birdeye historical 5m price",
+      "status": "accessible",
+      "message": "Endpoint responded; study coverage still requires verification"
+    },
+    {
+      "endpoint": "Birdeye historical exit liquidity",
+      "status": "blocked",
+      "message": "Birdeye historical exit liquidity rejected the request (HTTP 401). Check provider access or API plan."
+    }
+  ],
+  "checked_at": "2026-10-03T19:36:50.586Z",
+  "max_provider_attempts": 6,
+  "scope": "Endpoint access only; account quota, complete historical coverage and redistribution rights remain unverified"
+}

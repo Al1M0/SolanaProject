@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-03T19:46:17.983426+00:00",
+  "production_environment_revision": 3,
+  "production_checks": {
+    "private_site_readiness_http": 200,
+    "helius_history_http": 200,
+    "price_retrieval_http": 200,
+    "liquidity_http": 401
+  },
+  "history_pages": 17,
+  "history_records": 1519,
+  "history_coverage_complete": true,
+  "supported_swaps": 60,
+  "supported_tokens": 22,
+  "exclusions": {
+    "not_supported_swap": 1030,
+    "ambiguous_wallet_legs": 45,
+    "missing_swap_event": 384
+  },
+  "selected_token_swaps": 6,
+  "actual_historical_price_marks": 476,
+  "expected_five_minute_slots": 577,
+  "missing_price_marks": 101,
+  "historical_liquidity_marks": 0,
+  "price_http_attempts": 6,
+  "price_budget": 12,
+  "history_max_attempts_upper_bound": 34,
+  "independent_rpc_http": 200,
+  "independent_rpc_sample_matches": 5,
+  "explorer_ui_verified": false,
+  "performance_verified": false,
+  "training_block_correctly_enforced": true,
+  "experiment_id": "exp_d315633fdf4ece70badc4f63",
+  "dataset_content_hash": "7f5ed1b4408049bd35885fc22a0fa2e471c978ca9ba6cfa7dfdf34edc8931e94",
+  "original_raw_history_sha256": "2d76ff58d415a3ec7740b67d7c9eb738c9be555c26437ea02a9fbcd9e1a8ef66",
+  "source_unchanged_before_check": "5a4330f98d528490abaea4e0ef9e3396abbc978a",
+  "credentials_in_artifacts": false,
+  "raw_dataset_redistribution": "Not confirmed; full raw history, price marks and normalized dataset are omitted from source/archive."
+}

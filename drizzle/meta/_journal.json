@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1791015471591,
+      "tag": "0000_vengeful_eternity",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791037507628,
+      "tag": "0001_glamorous_silver_samurai",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "README.md": {
+    "bytes": 2067,
+    "sha256": "db0a239bc9450ccf8c0b015ba0eb45137524dedd723d1da47f0d679771eb48ca"
+  },
+  "mvp-audit.jpg": {
+    "bytes": 113383,
+    "sha256": "6438d732a714eb41ddb636cdfa4c7396f0d325c61ba86dc83dd6d22de57d409e"
+  },
+  "mvp-holdout.jpg": {
+    "bytes": 107588,
+    "sha256": "76162b6977ab3ff28ad6b47510098487d573b8185571e32361a024de7310eada"
+  },
+  "pitch-audio.mp3": {
+    "bytes": 1491915,
+    "sha256": "1543744af0d0b577d686977ff01508d7cbbc2bfaf65f86ff673ef020b868316d"
+  },
+  "pitch-poster.png": {
+    "bytes": 98836,
+    "sha256": "560160f5ef1e38ecb7f9043f3c60ab55795c12cdefc82b8519a560ceea670b8e"
+  },
+  "pitch.mp4": {
+    "bytes": 2842711,
+    "sha256": "287f82d7efc30145ce0a6ca96fc5ca1b7f3fc9dbc4c81812d932ec5f4180a435"
+  }
+}

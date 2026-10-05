@@ -1,0 +1,21 @@
+{
+  "dataset_id": "real_user_wallet_20261003_firstbuy",
+  "content_hash": "7f5ed1b4408049bd35885fc22a0fa2e471c978ca9ba6cfa7dfdf34edc8931e94",
+  "quality": {
+    "performance_ready": false,
+    "issues": [
+      "101 observations have missing or invalid prices",
+      "577 observations have missing or invalid historical liquidity",
+      "Missing historical prices or liquidity for GAwhcphCqCv5bKHmCiN4VDdNWfbXJL4npmkc8L3Q9S9H"
+    ],
+    "market_observations": 577,
+    "swap_events": 6,
+    "price_coverage_pct": 82.49566724436741,
+    "liquidity_coverage_pct": 0,
+    "missing_bars": 0,
+    "missing_prices": 101,
+    "missing_liquidity": 577,
+    "verified_token_ages": 0
+  },
+  "kind": "REAL"
+}

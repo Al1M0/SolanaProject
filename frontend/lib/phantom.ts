@@ -1,0 +1,6 @@
+export type PublicKey = {toString():string};
+export type PhantomProvider={isPhantom:boolean;isConnected:boolean;publicKey:PublicKey|null;connect(options?:{onlyIfTrusted:boolean}):Promise<{publicKey:PublicKey}>;disconnect():Promise<void>;signMessage(message:Uint8Array,display:"utf8"):Promise<{signature:Uint8Array;publicKey:PublicKey}>;on(event:string,callback:(key?:PublicKey|null)=>void):void;removeListener(event:string,callback:(key?:PublicKey|null)=>void):void};
+declare global {interface Window {phantom?:{solana?:PhantomProvider};solana?:PhantomProvider;}}
+export function phantomProvider():PhantomProvider|null {if(typeof window==="undefined")return null;const p=window.phantom?.solana||window.solana;return p?.isPhantom?p:null;}
+export function phantomError(error:unknown):string {const e=error as {code?:number;message?:string};if(e?.code===4001)return "Request declined in Phantom. You can try again when ready.";if(e?.code===-32002)return "A Phantom request is already open. Complete or close it first.";return e?.message||"Phantom could not complete the request. Open the extension and retry.";}
+export function signatureBase64(signature:Uint8Array){if(signature.length!==64)throw new Error("Phantom returned an invalid message signature.");return btoa(Array.from(signature,b=>String.fromCharCode(b)).join(""));}

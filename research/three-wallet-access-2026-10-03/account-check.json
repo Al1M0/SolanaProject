@@ -1,0 +1,9 @@
+{
+  "source": "https://api.mainnet-beta.solana.com",
+  "method": "getAccountInfo",
+  "commitment": "finalized",
+  "checked_at": "2026-10-03T20:16:39.409621+00:00",
+  "accounts": [],
+  "http_status": 429,
+  "status": "Independent RPC unavailable; no account classification claimed"
+}

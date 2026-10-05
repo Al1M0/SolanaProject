@@ -1,0 +1,13 @@
+We test whether wallet accumulation beats simple baselines after costs. This unchanged demonstration is labeled synthetic. It shows the workflow, not real Solana profitability.
+
+This report records genuine transactions and historical prices. Five sells matched independent RPC records. Missing prices and denied historical liquidity block real performance, so the full audit uses synthetic observations.
+
+Here are the universe, dates, capital and costs. All three portfolios use one engine. Training includes seven pre-specified sensitivity rows. We never select parameters using holdout returns.
+
+Now we freeze these settings. Changing them creates another attempt. This offline lock stays on this device. It prevents accidental edits through the app, but does not independently timestamp or certify the study.
+
+On the separate period, the strategy gains about one point three percent gross, but loses one point nine net. Buy-and-hold gains four point two; momentum loses eight point nine. Exposure, turnover and trade counts differ. These results do not prove alpha.
+
+Here is a trade's signal, delayed execution, exit and costs. Missing required observations block performance. Red means a negative result. Costs erase the observed gross gain in this period.
+
+The export contains the frozen manifest, permitted data, exact engine, results and trade evidence. A researcher can rerun it and compare fingerprints. Historical holdout data may already be known. We provide inspectable research, without promising profitable trading.

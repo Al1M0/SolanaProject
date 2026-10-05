@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-04T14:32:09.532280+00:00",
+  "mode": "actual local HTTP + fresh SQLite, SYNTHETIC observations",
+  "experiment_id": "exp_443b78a8b8a056edeaac3034",
+  "manifest_hash": "3ac2417b300a352fedd49b66601d1867973b63baea90bfd1650bec451a91acbf",
+  "results_hash": "2d7ef24b008aa673a49faab584e96996b530fe24277c4f7814ab8865b5757230",
+  "checks": [
+    {
+      "step": "create training",
+      "status": 202,
+      "kind": "SYNTHETIC"
+    },
+    {
+      "step": "freeze exact snapshot",
+      "status": 200
+    },
+    {
+      "step": "holdout vs both benchmarks",
+      "status": 202
+    },
+    {
+      "step": "ZIP independent subprocess reproduction",
+      "passed": true
+    }
+  ]
+}

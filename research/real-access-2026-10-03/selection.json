@@ -1,0 +1,16 @@
+{
+  "wallets": [
+    "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6"
+  ],
+  "source_url": "https://gmgn.ai/sol/address/8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+  "selection_rule": "User supplied the first visible public wallet in a GMGN list sorted by 1D PnL; no wallet returns independently verified.",
+  "selection_recorded_at": "2026-10-03T19:35:25.054853+00:00",
+  "start_ts": 1790881200,
+  "end_ts": 1791054000,
+  "window_rule": "Fixed 48 hours ending at the last completed UTC hour before selection; do not change after inspecting outcomes.",
+  "bias": "Wallet selected using a ranking overlapping this historical period. This is retrospective selection bias, not evidence of an unseen or unbiased test.",
+  "purpose": "Verify real ingestion and data quality. Missing historical exit liquidity blocks modeled performance.",
+  "history_page_limit": 10,
+  "max_upstream_attempts_history": 20,
+  "redistribution": "Not confirmed; raw provider records are kept outside the source repository."
+}

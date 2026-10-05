@@ -1,0 +1,10 @@
+{
+  "endpoint": "/defi/v3/liquidity/history/token",
+  "http_status": 401,
+  "provider_message": "Your API key lacks sufficient permissions to access this resource.",
+  "checked_at": "2026-10-03T19:40:52.806102+00:00",
+  "requested_anchor": 1791054000,
+  "count": 1,
+  "upstream_attempts": 1,
+  "keys_in_artifact": false
+}

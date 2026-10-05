@@ -1,0 +1,110 @@
+{
+  "attempt_nonce": "a54058cb8c4048c2be775dd39434b54f",
+  "benchmarks": {
+    "buy_and_hold": {
+      "allocation": "Each token receives min(strategy position budget, 90% of starting capital / selected token count). Unallocated, ineligible or failed allocations remain cash; no redistribution.",
+      "name": "Fixed allocation buy-and-hold",
+      "rule": "Decide at the first evaluation bar using available liquidity; buy on the first later bar after the shared delay; hold until segment end. No stops, targets or rebalancing."
+    },
+    "momentum": {
+      "allocation": "Same fixed allocation per token as buy-and-hold; no leverage or redistribution.",
+      "name": "Simple momentum",
+      "rule": "At segment start and every 60 minutes, buy if the available price is at least 1% above the available price 60 minutes earlier. Hold 60 minutes; no stops or targets. No entry while invested or pending."
+    }
+  },
+  "configuration": {
+    "accumulation_minutes": 30,
+    "entry_delay_minutes": 5,
+    "fee_bps": 30.0,
+    "fixed_fee_usd": 0.01,
+    "holding_minutes": 120,
+    "hypothesis": "When multiple previously profitable wallets accumulate a token, subsequent returns may exceed execution costs.",
+    "initial_capital_usd": 10000.0,
+    "liquidity_impact_bps_per_pct": 0.0,
+    "max_liquidity_participation_pct": 1.0,
+    "min_closed_trades": 2,
+    "min_liquidity_usd": 100000.0,
+    "min_momentum_pct": -100.0,
+    "min_token_age_hours": 0.0,
+    "min_trade_size_usd": 0.0,
+    "min_volume_usd": 0.0,
+    "min_wallet_count": 3,
+    "min_wallet_return_pct": 0.0,
+    "momentum_minutes": 60,
+    "name": "Smart Money Accumulation",
+    "position_size_usd": 1000.0,
+    "slippage_bps": 20.0,
+    "stop_loss_pct": 5.0,
+    "strategy_type": "smart_money_accumulation",
+    "take_profit_pct": 8.0,
+    "train_fraction": 0.7,
+    "wallet_ids": [],
+    "warmup_hours": 24
+  },
+  "created_at": "2026-10-03T18:22:43.930000+00:00",
+  "dataset_content_hash": "d1472d81d69983de87dad530d89bf0e1f108552086da79719cae74f71d09107d",
+  "dataset_id": "synthetic-seed-33",
+  "dataset_kind": "SYNTHETIC",
+  "engine_version": "1.2.0",
+  "execution_assumptions": {
+    "entry_delay_minutes": 5,
+    "fee_bps": 30.0,
+    "fixed_fee_usd": 0.01,
+    "initial_capital_usd": 10000.0,
+    "liquidity_impact_bps_per_pct": 0.0,
+    "max_liquidity_participation_pct": 1.0,
+    "min_liquidity_usd": 100000.0,
+    "position_size_usd": 1000.0,
+    "slippage_bps": 20.0
+  },
+  "experiment_id": "exp_4514bc9bb0270736afa3555d",
+  "holdout_warning": "Historical holdout may already be known from raw data. This lock protects the stored snapshot, not secrecy or absence of human look-ahead.",
+  "hypothesis": "When multiple previously profitable wallets accumulate a token, subsequent returns may exceed execution costs.",
+  "observation_availability": "5m REAL prices available source_price_ts + 300s; exact historical liquidity snapshots; no gap filling. SYNTHETIC observations are simulated.",
+  "provider_provenance": {
+    "coverage": "14 synthetic days; 5-minute market snapshots",
+    "generated_at": "2026-01-01T00:00:00Z (fixed scenario metadata)",
+    "generator_version": "1.0.0",
+    "liquidity_source": "simulated historical snapshots",
+    "price_unit": "simulated USD",
+    "provider": "deterministic-simulator",
+    "retrieved_at": null,
+    "seed": 33
+  },
+  "schema_version": 1,
+  "seed": 33,
+  "sensitivity_design": {
+    "delays_minutes": "max(0, base - 5), min(1440, base + 5)",
+    "design": "Seven pre-specified one-at-a-time rows; base plus low/high fees, delay and unique-wallet threshold. Training only; no best-row selection.",
+    "fees": "base / 2, min(1000, base * 2 + 10)",
+    "unique_buyers": "max(1, base - 1), min(100, base + 1)"
+  },
+  "source_revision": "source-sha256:697441c3e80d5740405e38f36f16b7b6288b30a269b236d8fe2dfbf9a09d02c5",
+  "split": {
+    "holdout_end": 1768435200,
+    "holdout_start": 1768098300,
+    "training_end": 1768098000,
+    "training_start": 1767312000,
+    "warmup_start": 1767225600
+  },
+  "token_universe": [
+    "SYNTH_EMBER",
+    "SYNTH_NOVA",
+    "SYNTH_ORBIT",
+    "SYNTH_TIDAL"
+  ],
+  "wallet_universe": [
+    "SYNTH_W01",
+    "SYNTH_W02",
+    "SYNTH_W03",
+    "SYNTH_W04",
+    "SYNTH_W05",
+    "SYNTH_W06",
+    "SYNTH_W07",
+    "SYNTH_W08",
+    "SYNTH_W09",
+    "SYNTH_W10",
+    "SYNTH_W11",
+    "SYNTH_W12"
+  ]
+}

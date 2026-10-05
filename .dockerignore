@@ -1,0 +1,16 @@
+**/node_modules
+**/.next
+**/out
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/*.db
+**/*.db-wal
+**/*.db-shm
+**/.env
+**/.env.local
+.git
+dist
+.sites-runtime
+frontend/public/runtime
+frontend/public/research
