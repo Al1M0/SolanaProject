@@ -1,6 +1,6 @@
 # Record the product demo — complete operator guide
 
-Prepared 2026-10-05. This is a recording guide, not a completed demo video or a submitted entry. Target 2:50, with a maximum exported duration of 3:00. All spoken narration, titles and captions must be English. The organizer's supplied message requires a two-minute pitch, a three-minute product demo, an English GitHub README following the example, and an MVP link.
+The [finished 3:00 English demo](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/3073e8de-450f-4848-9a6f-f74412a86eec.mp4) already records the actual public MVP through export and strict fresh-ZIP reproduction. This operator guide is retained for optional future rerecording; no additional recording is needed now. The final [pitch](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/b1718ded-0e30-4b5c-92ad-a6adde3caf20.mp4) is exactly 2:00. Use [TODAY_EN.md](TODAY_EN.md) for the remaining application steps.
 
 MVP: https://solana-quant.hkakasi358.workers.dev/audit/
 
@@ -84,14 +84,14 @@ This is useful evidence, but do it only if already tested and it fits the three-
 3. Run:
 
 ```bash
-python3 reproduce.py
+python3.12 reproduce.py
 ```
 
-4. Show the actual output, including `"reproduced": true`, only after this run succeeds. If Python is unavailable, leave the CLI rerun out of the recording and describe it as a capability. The committed reference ZIP was separately reproduced, but that does not establish reproduction of a new browser export.
+4. Show the actual output, including `"reproduced": true`, only after this run succeeds. Use Python 3.12 for exact results. If it is unavailable, do not claim that a new rerun succeeded. The finished demo's actual fresh export has already been strictly verified on Python 3.12.15; see FINAL_MEDIA_EN.md.
 
 ## 5. Review, upload and hand off
 
-Play the complete exported video. Confirm that it contains the actual application, English narration/captions, a visible SYNTHETIC disclosure, readable labels, the honest result and no private account screens. Measure the actual runtime: it must not exceed 3:00. The separate pitch still requires a two-minute cut; the existing 1:33.71 pitch is not yet that cut.
+Play the complete exported video. Confirm that it contains the actual application, English narration/captions, a visible SYNTHETIC disclosure, readable labels, the honest result and no private account screens. Measure the actual runtime: it must not exceed 3:00. The separate [pitch](media/pitch.mp4) is now exactly 2:00.00, with the supplied narration at a calmer tempo.
 
 Upload the final videos using the platform accepted by the actual application. On YouTube, **Unlisted** permits anyone with the link to watch without a Google account; **Private** restricts viewing. Check the final viewer URLs while signed out. YouTube's controls are documented at https://support.google.com/youtube/answer/157177?hl=en (checked 2026-10-05).
 

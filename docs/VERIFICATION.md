@@ -1,5 +1,13 @@
 # Verification record
 
+## Actual public demo and export review — 2026-10-05
+
+The final demo records the team's public Cloudflare deployment in a fresh anonymous browser. Default SYNTHETIC seed 33 and configuration are unchanged. Training, freeze, chronological holdout, trade inspection and a fresh 1,112,627-byte ZIP download completed. That exact bundle passed an independent Python 3.12.15 run with full source/data/manifest/results checks; result SHA-256 is `55828634a0d74dfbaee86a5daaa789fa78bb5d3f00a2c20d4904179d33018e59`.
+
+An earlier fresh export failed on Python 3.11.6 with last-bit numeric differences and passed unchanged on Python 3.12.15. Older “3.10+” bundle descriptions are too broad for exact float hashes. No engine/result rounding or tolerance was added. The [runtime compatibility note](submission/REPRODUCTION_RUNTIME_EN.md) explains the tested boundary; the app's generated description is not redeployed in this documentation/media pass.
+
+Final English pitch/demo are exactly 120/180 seconds, H.264/AAC at 1280×720; full decoding, source narration sections and eight timeline-frame visual checks passed. The [media evidence](submission/FINAL_MEDIA_EN.md) records actual file and study fingerprints. Full human listening, real Phantom/provider interaction, hosted D1 workflow, complete REAL performance and portal submission remain unverified. Application code is unchanged in this pass; the earlier test-suite/build records below are retained, not claimed as fresh reruns.
+
 ## Guided audit, provider errors and export repair — 2026-10-04
 
 Four actual screenshots and one SYNTHETIC audit ZIP supplied by the project builder were opened. They show training, a frozen/evaluated historical holdout, trade evidence and a saved archive. The Markets screenshot shows CoinGecko HTTP 403 for both current prices and history. This proves that those requests were refused; it does not identify the account, entitlement or network cause. The screenshots belong to the preceding release, not a fresh browser run of this change.

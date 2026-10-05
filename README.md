@@ -6,7 +6,7 @@
 
 Open the [live audit](https://solana-quant.hkakasi358.workers.dev/audit/) and follow **Training → Freeze → Holdout → Export**. The Cloudflare address was supplied by the team on 2026-10-05. The offline workflow runs entirely in the browser and requires no provider key or wallet connection.
 
-The [pitch video](docs/submission/media/pitch.mp4) uses the team's supplied ElevenLabs narration, with explanatory visuals. The original [audio](docs/submission/media/pitch-audio.mp3) and [spoken script](docs/submission/PITCH_READ_EN.txt) are included. **The product demo video is still pending.** This README follows the structure of the organizer-supplied [submission example](https://github.com/Marakaya/colosseum_example), using this project's actual stack and evidence.
+The final [two-minute pitch](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/b1718ded-0e30-4b5c-92ad-a6adde3caf20.mp4) and [three-minute product demo](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/3073e8de-450f-4848-9a6f-f74412a86eec.mp4) are available without sign-in. The demo records the actual public MVP and a successful independent rerun of its fresh exported ZIP. Both use the team's supplied ElevenLabs narration; it is not claimed as a team member's natural voice. The original [audio](docs/submission/media/pitch-audio.mp3) and [spoken script](docs/submission/PITCH_READ_EN.txt) are included. This README follows the organizer-supplied [submission example](https://github.com/Marakaya/colosseum_example), using this project's actual stack and evidence.
 
 ## Submission to the 2026 Colosseum hackathon
 
@@ -14,8 +14,8 @@ Submission preparation is in progress. The organizer's supplied checklist requir
 
 | Required link | Status |
 |---|---|
-| [Pitch video — current 1:33.71 cut](docs/submission/media/pitch.mp4) | Needs meaningful extension to the required two minutes before submission; external viewing URL pending |
-| Product demo — under 3 minutes | Pending actual recording and reviewable video URL |
+| [Pitch video — 2:00](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/b1718ded-0e30-4b5c-92ad-a6adde3caf20.mp4) | Final English MP4; H.264/AAC, 1280×720, exactly 120 seconds |
+| [Product demo — 3:00](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/3073e8de-450f-4848-9a6f-f74412a86eec.mp4) | Actual MVP workflow, visibly edited timing, fresh ZIP and strict Python 3.12.15 reproduction; exactly 180 seconds |
 | [Team's GitHub source repository](https://github.com/Al1M0/SolanaProject) | Public source and research evidence |
 | [MVP](https://solana-quant.hkakasi358.workers.dev/) | Team-provided Cloudflare address; browser audit verification recorded below |
 
@@ -107,10 +107,10 @@ Open `http://localhost:3000/audit/`, enable **Offline audit**, then **Inspect tr
 ```bash
 python3 -m zipfile -e research/reference/reproduction.zip /tmp/quant-reference-reproduction
 cd /tmp/quant-reference-reproduction
-python3 reproduce.py
+python3.12 reproduce.py
 ```
 
-Reproduction requires standard-library Python 3.10+ and compares the data, engine and result fingerprints. [Local setup](docs/LOCAL_SETUP.md) preserves the full native launch, server settings, builds and verification commands.
+Use Python 3.12 for strict result fingerprint verification, with no external Python packages. Python 3.12.14 verified the committed reference and Python 3.12.15 verified the fresh demo export. Older bundled instructions saying “3.10+” are too broad: Python 3.11 produces last-bit float differences and fails the exact results check. No rounding or tolerance was added. See the [runtime compatibility note](docs/submission/REPRODUCTION_RUNTIME_EN.md) and [local setup](docs/LOCAL_SETUP.md).
 
 ## Roadmap
 
@@ -121,15 +121,16 @@ Reproduction requires standard-library Python 3.10+ and compares the data, engin
 - [ ] Exercise the browser/Phantom flow, record actual feedback and interview five researchers.
 - [x] Publish the narrated pitch MP4 and original narration to the team's GitHub.
 - [x] Publish the complete source and research package to the team's GitHub.
-- [ ] Publish the pitch on a video platform, record the product demo and complete submission fields.
+- [x] Publish the final 2:00 pitch and 3:00 product demo; verify actual browser export and strict rerun.
+- [ ] Complete active participant/event fields, review the actual portal and save submission confirmation.
 - [ ] Future work: prospective paper experiments, defensible walk-forward folds and optional user-initiated devnet receipt.
 
 ## Resources
 
 - [Live MVP — public viewing enabled](https://solana-quant.hkakasi358.workers.dev/)
-- [Pitch video — MP4](docs/submission/media/pitch.mp4) and [original narration — MP3](docs/submission/media/pitch-audio.mp3)
+- [Final pitch video — 2:00](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/b1718ded-0e30-4b5c-92ad-a6adde3caf20.mp4), [final product demo — 3:00](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/3073e8de-450f-4848-9a6f-f74412a86eec.mp4) and [original narration — MP3](docs/submission/media/pitch-audio.mp3)
 - [English pitch script](docs/submission/PITCH_EN.md)
-- [English demo script — recording pending](docs/submission/DEMO_EN.md)
+- [English demo script](docs/submission/DEMO_EN.md) and [actual recording evidence](docs/submission/FINAL_MEDIA_EN.md)
 - [Complete product-demo recording guide](docs/submission/DEMO_RECORDING_EN.md)
 - [Recording and GitHub handoff guide](docs/submission/RECORDING_AND_GITHUB.md)
 - [Verification](docs/VERIFICATION.md), [limitations](docs/LIMITATIONS.md), [API](docs/API.md), [providers](docs/PROVIDERS.md)
@@ -137,7 +138,7 @@ Reproduction requires standard-library Python 3.10+ and compares the data, engin
 - [Usability task](docs/submission/USER_TEST.md), [five-user interview guide](docs/submission/INTERVIEWS.md), [feedback log](docs/submission/FEEDBACK_LOG.md), [judging Q&A](docs/submission/JUDGING_QUESTIONS.md)
 - [Organizer's repository example](https://github.com/Marakaya/colosseum_example) and [official Colosseum FAQ](https://colosseum.com/hackathon?year=fall2026)
 
-The complete source, research evidence, pitch MP4 and original narration are published to GitHub. The demo video, externally hosted video URLs and submission confirmation are still pending. The supplied narration is an ElevenLabs voice, not a claimed recording of a team member speaking. Team names/roles and registered event details still need human completion. See [current handoff](docs/submission/LINKS_TO_SUBMIT_EN.md).
+The source and research evidence are public on GitHub; both final videos have public MP4 links above. The earlier pitch file stored in the GitHub media folder is superseded by the final hosted cut. Active-participant names/roles, registered event fields and portal submission still need human completion. No completed application is claimed. See the [four-link handoff](docs/submission/LINKS_TO_SUBMIT_EN.md).
 
 ## License
 

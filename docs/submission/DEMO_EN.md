@@ -1,6 +1,6 @@
-# English product demo — target 2:50, maximum 3:00
+# English product demo — completed 3:00 recording
 
-Status: script prepared; recording pending. The deployed offline workflow through holdout was checked in a browser on 2026-10-05; the actual recording machine still needs a dry run. Follow [the complete recording guide](DEMO_RECORDING_EN.md) for exact buttons, Mac capture controls, timing and spoken text. Show the unchanged seed-33 SYNTHETIC reference. Do not change the threshold, fees, delay, universe or seed to improve the demonstration's returns.
+Status: the [actual public-MVP demo](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/3073e8de-450f-4848-9a6f-f74412a86eec.mp4) is complete and exactly 3:00.00. The fresh browser run downloaded a ZIP and strictly reproduced it on Python 3.12.15. See [FINAL_MEDIA_EN.md](FINAL_MEDIA_EN.md) for the actual edit and evidence. The following 2:50 live-operator script is an alternative rerecording guide; the finished edit uses the supplied narration in reordered sections. Keep unchanged seed-33 SYNTHETIC defaults.
 
 ## Prepare before recording
 

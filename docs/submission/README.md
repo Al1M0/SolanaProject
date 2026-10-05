@@ -7,7 +7,9 @@ Prepared materials, not a submitted entry or evidence of customer traction.
 - [Pricing and provider-cost assumptions](PRICING_AND_COSTS.md)
 - [Five-user interview and usability guide](INTERVIEWS.md)
 - [Feedback log — empty until genuine interviews](FEEDBACK_LOG.md)
-- [Narrated pitch video — MP4](media/pitch.mp4) and [original supplied audio](media/pitch-audio.mp3)
+- [Final English pitch — 2:00](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/b1718ded-0e30-4b5c-92ad-a6adde3caf20.mp4), [product demo — 3:00](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/3073e8de-450f-4848-9a6f-f74412a86eec.mp4) and [original supplied audio](media/pitch-audio.mp3)
+- [Actual recording evidence and measured media hashes](FINAL_MEDIA_EN.md)
+- [Verified Python runtime for strict reproduction](REPRODUCTION_RUNTIME_EN.md)
 - [Pitch media details](media/README.md)
 - [English pitch script, target 2 minutes](PITCH_EN.md)
 - [English product-demo script, target 2:50 and maximum 3 minutes](DEMO_EN.md)
@@ -26,6 +28,6 @@ Prepared materials, not a submitted entry or evidence of customer traction.
 
 Research evidence: [SYNTHETIC report](../../research/reference/research_report.md), [reproduction bundle](../../research/reference/reproduction.zip), [verification record](../VERIFICATION.md), and [blocked REAL-study/reconciliation protocol](../REAL_STUDY.md).
 
-The English root [README](../../README.md) follows the organizer-supplied template's structure. Source, research evidence and pitch media are published to [Al1M0/SolanaProject](https://github.com/Al1M0/SolanaProject). A 1:33.71 pitch MP4 is prepared from the supplied ElevenLabs narration; it still needs meaningful extension to the required two minutes. The product demo and external viewing URLs are still pending. The current MVP is [the team's Cloudflare deployment](https://solana-quant.hkakasi358.workers.dev/); browser verification is documented in media/README.md. The [rules](RULES.md) distinguish the organizer's stricter two-minute presentation requirement from the official FAQ.
+The English root [README](../../README.md) follows the organizer's example. Source and evidence are public in [Al1M0/SolanaProject](https://github.com/Al1M0/SolanaProject); both final videos are hosted at the links above. The anonymous Cloudflare audit was recorded through export, and its fresh ZIP independently reproduced. The [rules](RULES.md) distinguish the organizer's stricter two-minute requirement from the FAQ.
 
-For the human team's reported 2026-10-05 deadline, finish the four mandatory links, a recording-machine dry run, judge access, confirmed team fields and portal submission first. Use the working SYNTHETIC workflow and disclose the blocked REAL study. Do not wait for Birdeye or buy access for this submission. Completing the genuine study, five researcher sessions and unverified wallet interactions remain follow-up work; they must not be described as completed. A negative or inconclusive result is acceptable; do not tune the demo to obtain profit.
+The human team must complete actual active-participant/event fields, review the links, submit before its cutoff and save confirmation. No submitted application, genuine performance, five interviews, real Phantom interaction or validated customer demand is claimed. Use the labeled SYNTHETIC workflow; do not wait for Birdeye or buy access for this submission.

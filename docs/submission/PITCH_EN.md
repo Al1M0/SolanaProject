@@ -1,6 +1,6 @@
 # English pitch — target 2:00
 
-Status: [pitch MP4](media/pitch.mp4) prepared from the team-supplied ElevenLabs narration; actual duration 1:33.71. This current cut needs meaningful extension to the required 2:00 before submission. The product demo remains separate. The organizer's two-minute requirement is stricter than the official FAQ's 2–3 minutes. Use the spoken text below, read naturally and time a rehearsal. Time markers and directions are not spoken. Approximately 220 words allows pauses at roughly 120 words per minute; actual duration depends on the speaker.
+Status: the final [English pitch MP4](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/b1718ded-0e30-4b5c-92ad-a6adde3caf20.mp4) is exactly 2:00.00. It uses the supplied ElevenLabs narration slowed without pitch change, with explanatory evidence slides. The earlier GitHub MP4 is superseded. The product demo is a separate [3:00 recording](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/3073e8de-450f-4848-9a6f-f74412a86eec.mp4). The organizer's two-minute requirement is stricter than the official FAQ's 2–3 minutes. The spoken text follows; time markers are approximate and not spoken.
 
 ## 0:00–0:20 · The problem
 

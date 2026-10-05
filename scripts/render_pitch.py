@@ -1,6 +1,8 @@
 """Compose the supplied narration into a pitch MP4. Requires Pillow and ffmpeg.
 
 Usage: python3 scripts/render_pitch.py --work-dir /tmp/solana-pitch
+The default output is exactly two minutes, using the supplied narration at a
+calmer tempo without changing its pitch. The original MP3 remains unchanged.
 The five visual sections are explanatory slides, not a product-demo recording.
 """
 from __future__ import annotations
@@ -130,13 +132,22 @@ def make_slides(work):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--work-dir", type=Path, required=True)
+    parser.add_argument("--duration-seconds", type=float, default=120.0)
     args = parser.parse_args()
     args.work_dir.mkdir(parents=True, exist_ok=True)
     make_slides(args.work_dir)
     audio = MEDIA / "pitch-audio.mp3"
     probe = json.loads(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "json", str(audio)]))
-    end = math.ceil((float(probe["format"]["duration"]) + 1.5) * FPS) / FPS
-    boundaries = [0, 14.9, 33.2, 53.5, 69.9, end]
+    original_duration = float(probe["format"]["duration"])
+    end = round(args.duration_seconds * FPS) / FPS
+    speech_duration = end - 1.5
+    tempo = original_duration / speech_duration if speech_duration > 0 else 0
+    if not 0.5 <= tempo <= 2.0:
+        parser.error("Requested duration needs a narration tempo outside 0.5–2.0.")
+    scale = speech_duration / original_duration
+    boundaries = [round(t * scale * FPS) / FPS for t in [0, 14.9, 33.2, 53.5, 69.9]] + [end]
+    if any(stop <= start for start, stop in zip(boundaries, boundaries[1:])):
+        parser.error("Requested duration is too short for the five sections.")
     segments = []
     for n, (start, stop) in enumerate(zip(boundaries, boundaries[1:]), 1):
         duration = round((stop - start) * FPS) / FPS
@@ -147,8 +158,8 @@ def main():
         print(f"Rendered section {n}/5", flush=True)
     concat = args.work_dir / "concat.txt"
     concat.write_text("".join(f"file '{p.resolve().as_posix()}'\n" for p in segments))
-    subprocess.run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(audio), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-af", "apad", "-t", str(end), "-movflags", "+faststart", str(MEDIA / "pitch.mp4")], check=True)
-    print(json.dumps({"pitch": str(MEDIA / "pitch.mp4"), "target_duration_seconds": end, "bytes": (MEDIA / "pitch.mp4").stat().st_size}), flush=True)
+    subprocess.run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(audio), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-af", f"atempo={tempo:.10f},apad", "-t", str(end), "-movflags", "+faststart", str(MEDIA / "pitch.mp4")], check=True)
+    print(json.dumps({"pitch": str(MEDIA / "pitch.mp4"), "target_duration_seconds": end, "narration_tempo": tempo, "bytes": (MEDIA / "pitch.mp4").stat().st_size}), flush=True)
 
 
 if __name__ == "__main__":
