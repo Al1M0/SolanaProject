@@ -1,9 +1,11 @@
-A Solana researcher sees several successful wallets buying the same token. Should they follow? Wallet activity alone cannot answer that. The useful question is whether this idea beats a simple baseline after fees and delays on a separate period.
+We are Ali Mukhanbetov and Merey Mukhametkali, the team behind Solana Quant Research Lab. Ali studies Information Systems at KBTU. Merey explores Python and quantitative trading. We’re building a tool we would use ourselves: an honest way to test trading ideas.
 
-Solana Quant Research Lab turns that question into an audit. State a hypothesis, select the wallets and tokens, check data quality, and inspect training. Then freeze the configuration and evaluate a historical holdout against buy-and-hold and a fixed momentum rule, using the same execution engine.
+A researcher sees successful wallets buying the same token. Should they follow? Wallet activity alone cannot answer that. Our question is whether the hypothesis beats a simple baseline after fees and delays on a separate period.
 
-We show costs, exposure, turnover and individual trades. Our clearly labeled synthetic demonstration is unchanged: the strategy makes about one point three percent before costs, but loses one point nine percent after costs. Buy-and-hold does better. Rejecting a weak hypothesis is a useful research outcome.
+In our working MVP, researchers state a hypothesis, select wallets and tokens, inspect data quality and run training. They freeze the configuration, then evaluate a historical holdout against buy-and-hold and fixed momentum, using the same execution engine.
 
-Every attempt stays visible. A frozen manifest binds the data, assumptions and engine. The export lets another researcher reproduce the results. Historical data may already be known to the user, so the lock does not prove an unseen holdout or profitable alpha.
+Our unchanged synthetic demo earns about one point three percent before costs but loses one point nine percent after costs. Buy-and-hold does better. Rejecting that hypothesis helps the researcher avoid a misleading signal.
 
-We have retrieved genuine Solana transactions and historical prices, and checked five sells against independent RPC records. Real performance remains blocked by incomplete prices and denied historical-liquidity access. Next, we will complete that study and test the workflow with five researchers. Pricing is a hypothesis; customer demand is unvalidated.
+Every attempt remains visible. Trade evidence shows costs, exposure and turnover. The export binds the dataset, assumptions and engine, and another researcher can rerun it. A historical lock does not prove an unseen holdout or profitable alpha.
+
+We have retrieved real Solana transactions and historical prices, with five sells matched against independent RPC records. Real performance is still blocked by missing prices and historical liquidity. Next, we’ll complete that study and test with five researchers. Pricing and customer demand remain unvalidated.

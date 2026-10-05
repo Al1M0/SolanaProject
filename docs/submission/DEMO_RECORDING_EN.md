@@ -1,6 +1,6 @@
 # Record the product demo — complete operator guide
 
-The [finished 3:00 English demo](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/3073e8de-450f-4848-9a6f-f74412a86eec.mp4) already records the actual public MVP through export and strict fresh-ZIP reproduction. This operator guide is retained for optional future rerecording; no additional recording is needed now. The final [pitch](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/b1718ded-0e30-4b5c-92ad-a6adde3caf20.mp4) is exactly 2:00. Use [TODAY_EN.md](TODAY_EN.md) for the remaining application steps.
+The [finished 3:00 English demo](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/3073e8de-450f-4848-9a6f-f74412a86eec.mp4) already records the actual public MVP through export and strict fresh-ZIP reproduction. This operator guide is retained for optional future rerecording. The revised [team pitch](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/d2e364be-2dcf-485e-b73b-dfb7872f9bb8.mp4) is exactly 1:48, within the two-minute limit. Both videos still need upload to YouTube, Loom or Vimeo. Use [TODAY_EN.md](TODAY_EN.md) for the remaining steps.
 
 MVP: https://solana-quant.hkakasi358.workers.dev/audit/
 
@@ -91,7 +91,7 @@ python3.12 reproduce.py
 
 ## 5. Review, upload and hand off
 
-Play the complete exported video. Confirm that it contains the actual application, English narration/captions, a visible SYNTHETIC disclosure, readable labels, the honest result and no private account screens. Measure the actual runtime: it must not exceed 3:00. The separate [pitch](media/pitch.mp4) is now exactly 2:00.00, with the supplied narration at a calmer tempo.
+Play the complete exported video. Confirm actual application footage, English narration, a visible SYNTHETIC label, readable evidence and no private account screens. Runtime must not exceed 3:00. Use the revised 1:48 team pitch linked above; the older GitHub media/pitch.mp4 is superseded. The new pitch uses stock George AI narration without stretching its speed.
 
 Upload the final videos using the platform accepted by the actual application. On YouTube, **Unlisted** permits anyone with the link to watch without a Google account; **Private** restricts viewing. Check the final viewer URLs while signed out. YouTube's controls are documented at https://support.google.com/youtube/answer/157177?hl=en (checked 2026-10-05).
 

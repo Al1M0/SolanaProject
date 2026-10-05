@@ -6,7 +6,7 @@
 
 **Why Solana?** The tested hypothesis uses Solana wallet swaps and token-market observations. Normalization must distinguish wallet economic endpoints from route hops, honor token decimals and preserve signatures for reconciliation. Fees, delay and liquidity matter to this question. No proprietary token or extra chain transaction is required.
 
-**Is the reference dataset real?** No. It is seed-33 SYNTHETIC data used for deterministic engineering validation. Actual historical ingestion adapters exist, but Helius and Birdeye credentials are missing; historical-liquidity plan access and a reconciled REAL study remain unverified. Public price charts do not substitute for historical execution observations.
+**Is the reference dataset real?** No. It is seed-33 SYNTHETIC data used for deterministic engineering validation. Authorized Helius and Birdeye access retrieved actual Solana transactions and historical prices, and five sells matched independent public RPC records. Required price coverage remains incomplete and historical liquidity is denied on the available plan; complete REAL performance is blocked. Public price charts do not substitute for historical execution observations.
 
 **What is the supported coverage?** Small 5-minute studies, at most 14 historical days through ingestion. Hosted backfill allows 5 tokens, native ingestion 20, with request/page limits. Explicit one-input/one-output decoded swaps against SOL/USDC/USDT only. Missing prices/liquidity or incomplete wallet pagination block performance. Scaled-UI unsupported assets and ambiguous routes are excluded.
 
@@ -22,7 +22,7 @@
 
 **What did the experiment teach?** The untuned synthetic holdout is +1.2818% gross and -1.9150% net for the hypothesis, +4.2418% net for buy-and-hold, -8.8826% for momentum. Strategy exposure is lower; the result does not demonstrate skill. It demonstrates that costs can erase gross returns and that choosing an easy baseline would mislead.
 
-**How reproducible is it?** Manifest includes dataset SHA-256, provider provenance, controls, split, benchmark rules, seed where used and engine source hash/version. ZIP supplies the standard-library engine, reports, results, trades, exclusions and permitted data. `python3 reproduce.py` checks fingerprints and results. If redistribution is unconfirmed, data is omitted and the authorized original must be supplied separately.
+**How reproducible is it?** Manifest includes dataset SHA-256, provider provenance, controls, split, benchmark rules, seed where used and engine source hash/version. ZIP supplies the standard-library engine, reports, results, trades, exclusions and permitted data. `python3.12 reproduce.py` checks exact fingerprints/results on the verified runtime. Python 3.11 can fail float hashes; no tolerance was added. If redistribution is unconfirmed, data is omitted and the authorized original must be supplied separately.
 
 **What does a hash prove?** Consistency of a particular payload. No accuracy, profitability, absence of bias or unseen holdout. No devnet receipt is implemented. If added later, it would prove only that a hash was recorded by a time, require explicit user action and remain optional.
 

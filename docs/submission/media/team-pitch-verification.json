@@ -1,0 +1,37 @@
+{
+  "duration_seconds": 108,
+  "narration_seconds": 104.85551,
+  "bytes": 5157360,
+  "sha256": "7b093017321f3750fbc0889824a89e39a9a85758f58eacd04415b063dd1b94ef",
+  "streams": [
+    {
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "codec_name": "aac",
+      "codec_type": "audio"
+    }
+  ],
+  "audio_sha256": "a3bea74cb7cfb3d177c3dbbb94becced3971f212243ce1d8dc1545cb1b685bd4",
+  "scene_starts": [
+    0,
+    18.759999999999998,
+    33.78,
+    51.28,
+    66.88000000000001,
+    84.14
+  ],
+  "source": "AI narrator, native explanatory graphics",
+  "narration_time_stretch": false,
+  "date": "2026-10-05",
+  "pitch_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/d2e364be-2dcf-485e-b73b-dfb7872f9bb8.mp4",
+  "narration_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/155c4983-000e-4d36-b04c-509dd621b797.mp3",
+  "narrator": "ElevenLabs stock George",
+  "generation_id": "mDTb1yoelX7AyZBgn14G",
+  "spoken_text_sha256": "79c30015c2faca540f5a5b42b4ba01d27ae83f68af92d6c1e1f6e98ca6e82934",
+  "accepted_host_upload_completed": false,
+  "portal_submitted": false
+}

@@ -1,15 +1,21 @@
-# Submission rules and unknowns
+# Submission rules and remaining actions
 
-Primary reference checked 2026-10-04: [Colosseum hackathon FAQ, Fall 2026](https://colosseum.com/hackathon?year=fall2026). The human team supplied its organizer's checklist and [repository example](https://github.com/Marakaya/colosseum_example) on 2026-10-04; the public example README was retrieved and read that day.
+Primary public reference checked 2026-10-04: [Colosseum FAQ, Fall 2026](https://colosseum.com/hackathon?year=fall2026). The team supplied its organizer checklist and [repository example](https://github.com/Marakaya/colosseum_example). Actual Colosseum editor screenshots supplied 2026-10-05 establish the more specific instructions below.
 
-Confirmed published format: presentation video 2–3 minutes; product-demo video no more than 3 minutes. The current campaign is shown as Sep 14–Oct 12. Existing code is allowed, relevant development history must be disclosed, and judging considers work completed during the competition window. All team members must register; one submission per team/person. Private repositories require reviewer access under the published instructions.
+## Confirmed requirements
 
-## Organizer checklist supplied by the human team
+- Organizer: two-minute pitch, demo up to three minutes, GitHub following the example and public MVP, all in English.
+- Actual pitch field: separate from the demo; introduce yourselves, describe what you are building and why you are the people to build it. Up to two minutes. Accepted hosts: **YouTube, Loom or Vimeo**.
+- Actual demo field: show the live product, not a slide deck or code walkthrough. Up to three minutes. Same accepted hosts.
+- Media and code requires a project graphic and direct GitHub repository link. Optional repository context is limited to 500 characters. Live product/access instructions and X fields are visible; the organizer separately requires the MVP.
+- Both teammates must complete submission profiles. The screenshots show Ali Mukhanbetov and Mukhametkali Merey as the two active teammates.
+- Existing code is permitted by the public rules; disclose relevant history and AI assistance. Registration and submission do not follow merely from preparing a repository.
+- Final submission opens October 6 at 4:00 AM PDT, equivalent to October 6 at 4:00 PM Almaty. Save draft is not final submission.
 
-Four mandatory items: a **two-minute pitch video**, a **product demo of at most three minutes**, **GitHub following the supplied example**, and an **MVP link**. Everything must be **English**. The English scripts follow this stricter two-minute pitch requirement, with a 2:50 demo target and a hard three-minute limit. Time budgets are not measured recording durations.
+## Current materials and gaps
 
-The repository example's order covers submission/team, problem and solution, why Solana, features, stack, architecture, quick start, roadmap, resources and license. The prepared root README uses those sections without borrowing the example's team, stack, license, badges or feature claims. The final pitch and demo are complete at 2:00 and 3:00. Active-participant/event fields and portal submission remain unfinished.
+The revised 1:48 pitch introduces the active team. The separate 3:00 demo records the actual public MVP with disclosed timing edits. Both are finished English source MP4s; upload to YouTube/Loom/Vimeo remains unfinished. Public GitHub and MVP exist. See [form answers](FORM_ANSWERS_EN.md) and [media verification](FINAL_MEDIA_EN.md).
 
-On 2026-10-05, the human team explicitly reported that its submission is due today before night. Treat that as the operational deadline. The public campaign's Sep 14–Oct 12 dates do not override a team's earlier local submission deadline. The exact cutoff/time zone, registered track, repository-sharing arrangement and additional portal fields are not confirmed here. The user requested viewer access on 2026-10-05; the MVP now has confirmed public viewing. An actual anonymous-browser offline workflow through export and strict fresh-ZIP reproduction completed on 2026-10-05. Actual Phantom/provider interactions remain unverified. Check registration and the current portal before submission. These documents do not submit an entry or contact judges.
+The reported organizer deadline tonight remains a preparation/delivery deadline; it does not change the visible opening of final Colosseum submission. Public Sep 14–Oct 12 campaign dates do not override an earlier organizer deadline. Complete the draft now, then obtain final confirmation when the form opens.
 
-Do not invent demand, traction, team experience or an unseen test set. Disclose the reusable baseline and AI-assisted implementation factually using DEVELOPMENT_HISTORY.md and the actual Git history. A working demo or feature does not guarantee a prize.
+Do not invent demand, experience, revenue, partnerships, private contacts or an unseen test set. The team must supply any earlier work outside the visible repository and its personal fields. No winning outcome, accepted-host upload or submitted application is promised.

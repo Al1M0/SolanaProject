@@ -4,12 +4,14 @@ Prepared 2026-10-05. All videos are English. These materials do not submit the a
 
 | Final file | Public viewing link | Duration | Format | Bytes | SHA-256 |
 |---|---|---:|---|---:|---|
-| Pitch | [Watch pitch](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/b1718ded-0e30-4b5c-92ad-a6adde3caf20.mp4) | 120.000 seconds | H.264/AAC, 1280×720 | 3545081 | `4582c8d9577258bc035334544878f9243239b14c119d3451a9666325f87a1893` |
+| Revised team pitch | [Watch pitch](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/d2e364be-2dcf-485e-b73b-dfb7872f9bb8.mp4) | 108.000 seconds | H.264/AAC, 1280×720 | 5157360 | `7b093017321f3750fbc0889824a89e39a9a85758f58eacd04415b063dd1b94ef` |
 | Product demo | [Watch demo](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/3073e8de-450f-4848-9a6f-f74412a86eec.mp4) | 180.000 seconds | H.264/AAC, 1280×720 | 5495840 | `5ef746c6d33ae7734a08e28fb18004147aae8e71783755ad586e9f1a04524ab9` |
 
-Final media uploads returned HTTP 200 and were confirmed. The published MP4s were independently downloaded. Full video/audio decoding and durations were checked. Eight demo timeline frames were visually inspected for labels, readability and actual evidence. ASR checked the original supplied narration and its paragraph boundaries; no full human listening review is claimed. The team should listen to both complete videos before submitting.
+Final media uploads returned HTTP 200 and were confirmed. The published MP4s were independently downloaded. Full video/audio decoding and durations were checked. Eight demo timeline frames were visually inspected for labels, readability and actual evidence. ASR checked the original supplied narration and its paragraph boundaries; no full human listening review is claimed. All six revised pitch scenes were also visually inspected. The team should listen to both complete videos, including name pronunciation, before submitting.
 
-Both use the original team-supplied ElevenLabs narration, with tempo edits and no claim of a team member's natural voice. The demo was composed with native Higgsedit from actual Playwright screen capture. The app footage was not AI-generated. The pitch uses explanatory slides; it is separate from the product screen recording. The earlier GitHub pitch MP4 is superseded by the final two-minute hosted cut.
+The revised pitch uses new stock ElevenLabs George AI narration at its original speed. The demo uses the original supplied ElevenLabs narration with tempo edits. Neither claims a team member's natural voice. The demo was composed with native Higgsedit from actual Playwright screen capture. The app footage was not AI-generated. The revised pitch uses native explanatory graphics and introduces the verified two-person team. Narration is 104.85551 seconds and final video 108.000 seconds, without time-stretch. The earlier product-only 120-second pitch is superseded. The earlier GitHub pitch MP4 is superseded by the revised team pitch within two minutes.
+
+The actual portal requires YouTube, Loom or Vimeo links. Accepted-host uploads and final submission remain unfinished. Draft saving is available before the displayed October 6, 4:00 AM PDT opening.
 
 ## Actual demo sequence
 
@@ -50,3 +52,10 @@ python3 scripts/assemble_demo.py /tmp/quant-demo docs/submission/media/pitch-aud
 ```
 
 The recorder refuses missing downloads, changed reference values or a failed exact rerun. Experiment IDs/creation timestamps differ on a new attempt; deterministic research result fingerprints should match. Media hashes depend on encoder/tool versions and are not the experiment's reproducibility criterion. See [runtime compatibility](REPRODUCTION_RUNTIME_EN.md).
+
+## Revised pitch assets
+
+- Narration: [stock George MP3](https://d2ol7oe51mr4n9.cloudfront.net/user_3KH1suUw6Ev08L0HRx9TlaLPwnv/155c4983-000e-4d36-b04c-509dd621b797.mp3), SHA-256 `a3bea74cb7cfb3d177c3dbbb94becced3971f212243ce1d8dc1545cb1b685bd4`.
+- [Measured metadata](media/team-pitch-verification.json) records provenance, fingerprints and paragraph starts.
+- python3 scripts/assemble_team_pitch.py narration.mp3 /tmp/team-pitch renders native graphics aligned to narration; no engine/results change.
+- Canva's separate slide draft was updated and previewed; saving awaits explicit approval required by Canva. The finished native video is independent of saving that draft.
