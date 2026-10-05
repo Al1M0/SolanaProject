@@ -1,6 +1,6 @@
 # English pitch — target 2:00
 
-Status: [pitch MP4](media/pitch.mp4) prepared from the team-supplied ElevenLabs narration; actual duration 1:33.71. The product demo remains separate. The organizer's two-minute requirement is stricter than the official FAQ's 2–3 minutes. Use the spoken text below, read naturally and time a rehearsal. Time markers and directions are not spoken. Approximately 220 words allows pauses at roughly 120 words per minute; actual duration depends on the speaker.
+Status: [pitch MP4](media/pitch.mp4) prepared from the team-supplied ElevenLabs narration; actual duration 1:33.71. This current cut needs meaningful extension to the required 2:00 before submission. The product demo remains separate. The organizer's two-minute requirement is stricter than the official FAQ's 2–3 minutes. Use the spoken text below, read naturally and time a rehearsal. Time markers and directions are not spoken. Approximately 220 words allows pauses at roughly 120 words per minute; actual duration depends on the speaker.
 
 ## 0:00–0:20 · The problem
 

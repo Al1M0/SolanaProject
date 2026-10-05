@@ -6,8 +6,8 @@ The human team reported that its submission is due **today before night, 2026-10
 
 | Mandatory item | Prepared now | Still required from the human team |
 |---|---|---|
-| Pitch video: 2 minutes | [Narrated pitch MP4](media/pitch.mp4), actual duration 1:33.71, plus [script](PITCH_EN.md) | Upload the supplied-narration video to the platform accepted by the form and add its actual viewing URL. |
-| Product demo: maximum 3 minutes | [English screen sequence/narration](DEMO_EN.md), target 2:50 | Run the actual browser workflow, record it, verify duration and add a working reviewable video link. No video exists yet. |
+| Pitch video: 2 minutes | [Narrated pitch MP4](media/pitch.mp4), actual duration 1:33.71, plus [script](PITCH_EN.md) | Extend the current 1:33.71 cut meaningfully to the required 2:00, review it, upload the final video to the platform accepted by the form and add its actual viewing URL. |
+| Product demo: maximum 3 minutes | [Complete recording guide](DEMO_RECORDING_EN.md) and [English screen sequence/narration](DEMO_EN.md), target 2:50 | Run the actual browser workflow, record it, verify duration and add a working reviewable video link. No video exists yet. |
 | GitHub using the supplied template | [Public repository](https://github.com/Al1M0/SolanaProject): English README, source, setup, evidence, history disclosure and pitch media | Fill confirmed team fields and add actual external video-viewing URLs. |
 | MVP link | [Cloudflare MVP](https://solana-quant.hkakasi358.workers.dev/) | No-sign-in browser check completed through offline training, freeze and holdout; export UI reported bundle prepared. Still verify the full recording flow on the team's machine. |
 
@@ -20,11 +20,11 @@ The human team reported that its submission is due **today before night, 2026-10
 
 ## Finish in this order
 
-1. Check the portal's exact cutoff and required fields now. Fill actual team names, roles and public contacts. Use the human team's earlier deadline, not a different public campaign date.
+1. Check the portal's exact cutoff and required fields now. Fill only confirmed active-participant names, roles and public contacts. Use the human team's earlier deadline, not a different public campaign date.
 2. Make a short recording-machine dry run: offline audit, training, freeze, holdout and export. Repair any blocker; use an honestly disclosed already-computed attempt if necessary for video timing. The [usability task](USER_TEST.md) is available for this check; five customer interviews remain future work.
 3. Use the published [repository](https://github.com/Al1M0/SolanaProject). Fill confirmed team fields and real video links while preserving the development-history and data disclosures.
 4. Check the team's Cloudflare MVP on the recording machine. The offline browser verification recorded in media/README.md does not verify Phantom or genuine provider access.
-5. Download and review the prepared English pitch MP4, record the separate English product demo, then upload both videos where judges can view them and add the real links.
+5. Extend the current English pitch to the required two minutes and review it, record the separate English product demo, then upload both videos where judges can view them and add the real links.
 6. Preview the complete portal submission and every link using judge-like access. The humans submit the application; nothing here registers the team or contacts judges.
 
 ## Fields still missing
@@ -36,7 +36,7 @@ The human team reported that its submission is due **today before night, 2026-10
 | Registered event / track | |
 | Team-reported submission day | 2026-10-05, before night; exact portal hour/time zone pending |
 | Exact cutoff and time zone from the team's portal | |
-| Pitch video file and measured duration | [pitch.mp4](media/pitch.mp4), 1:33.71; external viewing URL pending |
+| Pitch video file and measured duration | [pitch.mp4](media/pitch.mp4), 1:33.71; two-minute cut and external viewing URL pending |
 | Demo video URL and measured duration | |
 | MVP viewer check | No-sign-in browser check through offline holdout completed; second-account/user-machine recording check still needed |
 | Submitted application URL / confirmation | |

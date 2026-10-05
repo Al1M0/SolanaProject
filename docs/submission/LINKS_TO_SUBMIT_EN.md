@@ -4,11 +4,11 @@ Prepared on 2026-10-05 for the human team's reported same-day deadline. No entry
 
 | Required field | Actual value |
 |---|---|
-| Team member 1: name, role, public contact | |
-| Team member 2: name, role, public contact | |
+| Confirmed active participant: name, role, public contact | |
+| Project page supplied by participant | https://colosseum.com/arena/projects/quantlab — fields and submission status unverified |
 | Registered event / track | |
 | Exact portal cutoff / time zone | |
-| Pitch video file | [Download pitch.mp4](media/pitch.mp4) |
+| Pitch video file | [Current pitch.mp4](media/pitch.mp4), 1:33.71; two-minute cut still required |
 | Pitch external viewing URL | Pending video-platform upload |
 | Pitch measured duration / audio reviewed | MP4 duration recorded in media/README.md; supplied ElevenLabs narration retained |
 | Demo video URL | Still pending recording |

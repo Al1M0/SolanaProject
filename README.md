@@ -14,7 +14,7 @@ Submission preparation is in progress. The organizer's supplied checklist requir
 
 | Required link | Status |
 |---|---|
-| [Pitch video — under 2 minutes](docs/submission/media/pitch.mp4) | Prepared from team-supplied ElevenLabs audio; download MP4. External viewing URL pending |
+| [Pitch video — current 1:33.71 cut](docs/submission/media/pitch.mp4) | Needs meaningful extension to the required two minutes before submission; external viewing URL pending |
 | Product demo — under 3 minutes | Pending actual recording and reviewable video URL |
 | [Team's GitHub source repository](https://github.com/Al1M0/SolanaProject) | Public source and research evidence |
 | [MVP](https://solana-quant.hkakasi358.workers.dev/) | Team-provided Cloudflare address; browser audit verification recorded below |
@@ -22,9 +22,8 @@ Submission preparation is in progress. The organizer's supplied checklist requir
 | Team member | Role | Contact |
 |---|---|---|
 | Pending human confirmation | Pending human confirmation | Pending human confirmation |
-| Pending human confirmation | Pending human confirmation | Pending human confirmation |
 
-Names, backgrounds and contacts have not been supplied. [Development history](docs/submission/DEVELOPMENT_HISTORY.md) discloses the existing baseline and Codex-assisted work; no interviews, revenue or partnerships are claimed.
+Only confirmed active participants will be included. Names, backgrounds and contacts have not been supplied. [Development history](docs/submission/DEVELOPMENT_HISTORY.md) discloses the existing baseline and Codex-assisted work; no interviews, revenue or partnerships are claimed.
 
 ## Problem and Solution
 
@@ -131,6 +130,7 @@ Reproduction requires standard-library Python 3.10+ and compares the data, engin
 - [Pitch video — MP4](docs/submission/media/pitch.mp4) and [original narration — MP3](docs/submission/media/pitch-audio.mp3)
 - [English pitch script](docs/submission/PITCH_EN.md)
 - [English demo script — recording pending](docs/submission/DEMO_EN.md)
+- [Complete product-demo recording guide](docs/submission/DEMO_RECORDING_EN.md)
 - [Recording and GitHub handoff guide](docs/submission/RECORDING_AND_GITHUB.md)
 - [Verification](docs/VERIFICATION.md), [limitations](docs/LIMITATIONS.md), [API](docs/API.md), [providers](docs/PROVIDERS.md)
 - [Positioning](docs/submission/POSITIONING.md), [source-linked competitor comparison](docs/submission/COMPETITORS.md), [pricing assumptions](docs/submission/PRICING_AND_COSTS.md)

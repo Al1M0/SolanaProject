@@ -1,6 +1,6 @@
 # English product demo — target 2:50, maximum 3:00
 
-Status: script prepared; recording pending. Builder screenshots establish training/holdout/export in the preceding interface, but the updated interface still needs a recording-machine dry run. Show the unchanged seed-33 SYNTHETIC reference. Do not change the threshold, fees, delay, universe or seed to improve the demonstration's returns.
+Status: script prepared; recording pending. The deployed offline workflow through holdout was checked in a browser on 2026-10-05; the actual recording machine still needs a dry run. Follow [the complete recording guide](DEMO_RECORDING_EN.md) for exact buttons, Mac capture controls, timing and spoken text. Show the unchanged seed-33 SYNTHETIC reference. Do not change the threshold, fees, delay, universe or seed to improve the demonstration's returns.
 
 ## Prepare before recording
 
